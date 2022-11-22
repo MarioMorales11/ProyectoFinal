@@ -5,13 +5,13 @@ const myconn=require('express-myconnection')
 const routes=require('./routes')
 
 const app=express()
-app.set('port',process.env.PORT||9000)
+app.set('port',process.env.PORT||9001)
 const dbOptions={
-    host:'localhost',
-    port: 3306,
-    user:'root',
-    password:'',
-    database:'países'
+    host:process.env.DB_HOST||'localhost',
+    port:process.env.DB_PORT|| 3306,
+    user:process.env.DB_USER||'root',
+    password:process.env.DB_PASSWORD||'',
+    database:process.env.DB_NAME||'países'
 }
 //Middlewares
 app.use(myconn(mysql,dbOptions,'single'))
