@@ -5,7 +5,7 @@ const myconn=require('express-myconnection')
 const routes=require('./routes')
 
 const app=express()
-app.set('port',process.env.PORT||9001)
+app.set(process.env.PORT||9001)
 const dbOptions={
     host:process.env.DB_HOST||'localhost',
     port:process.env.DB_PORT|| 3306,
