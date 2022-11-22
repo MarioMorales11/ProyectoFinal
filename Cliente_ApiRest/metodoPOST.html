@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inserta</title>
+</head>
+<style>
+   body{
+      font-family: Verdana, Tahoma, sans-serif;
+      margin: auto;
+      width: 640px; 
+      padding: 50px;
+      background-color: #212F3C;
+      color: azure;
+   }
+   .titulo{
+      text-align: center;
+      color: azure;
+   }
+   .contenido{
+      text-align: center;
+      margin-top: 10px;
+      padding: 30px;
+      background-color: #A04000;
+   }
+   #app{
+      border-color: #aaaaaa;
+      border-width: 1px;
+      border-style: solid;
+   }.boton{
+      padding: 30px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   button{
+      color: azure;
+      background: transparent;
+      border: 2px solid azure;
+      border-radius: 6px;
+      font-size: 15px;
+   }
+</style>
+<body>
+
+   <div class="titulo">
+      <h1>Inserta un nuevo Registro</h1>
+   </div>
+   
+   <div class="contenido">
+      <input type="text" id="PAIS" placeholder="País"> <br>
+      <input type="text" id="IRC" placeholder="Irc">  <br>
+      <input type="text" id="EVEN" placeholder="Evento"> <br>
+      <input type="text" id="AYO" placeholder="Año">  <br>
+      <br>
+      <a href="#" onclick="insertar()">
+         <button>Insertar</button>
+      </a>
+      <script src="metodoPOST.js"></script>
+   </div>
+   
+   <div class="boton">
+      <a href="Index.html">
+         <button>Atrás</button>
+      </a>
+   </div>
+
+</body>
+</html>
