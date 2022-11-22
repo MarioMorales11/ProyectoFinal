@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Insertar Datos</title>
+</head>
+<body>
+
+   <div>
+      <h2>Registre los usuarios</h2>
+      <hr style="color: #9999">
+      <form id="formulario" method="POST">
+         <div>
+            <label for="txt_pais" class="form-label">País: </label>
+            <input type="text" class="form-control" id="txt_pais" name="txt_pais" placeholder="Ingrese el país" required="">
+         </div>
+
+         <div>
+            <label for="txt_irc" class="form-label">IRC: </label>
+            <input type="text" class="form-control" id="txt_irc" name="txt_irc" placeholder="Ingrese el IRC" required="">
+         </div>
+
+         <div>
+            <label for="txt_evento" class="form-label">Evento: </label>
+            <input type="text" class="form-control" id="txt_evento" name="txt_evento" placeholder="Ingrese el evento" required="">
+         </div>
+
+         <div>
+            <label for="txt_year" class="form-label">Año</label>
+            <input type="text" class="form-control" id="txt_year" name="txt_year" placeholder="Ingrese el año" required="">
+         </div>
+
+         <button type="submit" class="btn">INSERTAR</button>
+      </form>
+   </div>
+   
+   <script src="app.js"></script>
+
+</body>
+</html>
